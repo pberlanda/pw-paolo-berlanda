@@ -1,6 +1,6 @@
 /* ----------------------------------------------------------------------------
     SETTING BASE
-    azzero marginie padding
+    azzero margini e padding
     imposto il box-sizong su border-box in modo che padding e bordi non alterino 
     larghezze calcolate. Il layout così è più prevedibile
 -----------------------------------------------------------------------------*/
@@ -12,11 +12,11 @@
 
 /* ----------------------------------------------------------------------------
     Custom properties
-    variabili CSS per definire una palette di cooiri ispirata al mondo
+    variabili CSS per definire una palette di colori ispirata al mondo
     dell'agricoltura:
     - verde (campi, sostenibilità)
     - terra (lavoro nei campi)
-    - crema (grando, patate, prodotti della terra)
+    - crema (grano, patate, prodotti della terra)
     usare variabili permette di cambiare tema modificando un solo punto nel
     codice (programmazione distribuita e cloud computing, ingegneria del sw)
     :root -> custom properties valide in tutto il documento
@@ -50,7 +50,7 @@ a {
 /* ---------------------------------------------------------------------------
     HEADER e NAVBAR
     position sticky -> la navbar rimane visibile anche durante lo scroll della
-    pagina. Lettura migliotrata su display di altezza ridotta
+    pagina. Lettura migliorata su display di altezza ridotta
 -----------------------------------------------------------------------------*/
 header {
     background-color: var(--verde-scuro);
