@@ -1,5 +1,48 @@
+/* ----------------------------------------------------------------------------
+ SETTING BASE
+ azzero marginie padding
+ imposto il box-sizong su border-box in modo che padding e bordi non alterino 
+ larghezze calcolate. Il layout così + più prevedibile
+-----------------------------------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+}
+
+/* ----------------------------------------------------------------------------
+   Custom properties
+   variabili CSS per definire una palette di coliri ispirata al mondo
+   dell'agricoltura:
+   - verde (campi, sostenibilità)
+   - terra (lavoro nei campi)
+   - crema (grando, patate, prodotti della terra)
+   usare variabili permette di cambiare tema modificando un solo punto nel
+   codice (programmazione distribuita e cloud computing, ingegneria del sw)
+   :root -> custom properties valide in tutto il documento
+-----------------------------------------------------------------------------*/
+:root {
+    --verde-scuro: #1f4d2c;
+      --verde: #2f6b3e;
+      --verde-chiaro: #eaf3ea;
+      --terra: #7a5230;
+      --crema: #f8f5ec;
+      --testo: #2b2b28;
+      --bianco: #ffffff;
+      --ombra: rgba(0, 0, 0, 0.12);
+}
+
+/* --------------------------------
+  setting base per alta leggibilità
+---------------------------------*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:var(--testo);
+    background-color: var(--crema);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    display: block;
 }
