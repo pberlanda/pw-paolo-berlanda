@@ -2,7 +2,7 @@
     SETTING BASE
     azzero marginie padding
     imposto il box-sizong su border-box in modo che padding e bordi non alterino 
-    larghezze calcolate. Il layout così + più prevedibile
+    larghezze calcolate. Il layout così è più prevedibile
 -----------------------------------------------------------------------------*/
 * {
     margin: 0;
@@ -12,7 +12,7 @@
 
 /* ----------------------------------------------------------------------------
     Custom properties
-    variabili CSS per definire una palette di coliri ispirata al mondo
+    variabili CSS per definire una palette di cooiri ispirata al mondo
     dell'agricoltura:
     - verde (campi, sostenibilità)
     - terra (lavoro nei campi)
@@ -23,13 +23,13 @@
 -----------------------------------------------------------------------------*/
 :root {
     --verde-scuro: #1f4d2c;
-      --verde: #2f6b3e;
-      --verde-chiaro: #eaf3ea;
-      --terra: #7a5230;
-      --crema: #f8f5ec;
-      --testo: #2b2b28;
-      --bianco: #ffffff;
-      --ombra: rgba(0, 0, 0, 0.12);
+    --verde: #2f6b3e;
+    --verde-chiaro: #eaf3ea;
+    --terra: #7a5230;
+    --crema: #f8f5ec;
+    --testo: #2b2b28;
+    --bianco: #ffffff;
+    --ombra: rgba(0, 0, 0, 0.12);
 }
 
 /* --------------------------------
@@ -70,13 +70,13 @@ header {
     padding: 1rem 1.5rem;
 }
 
-logo {
+.logo {
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-logo span {
+.logo span {
     color:#a9d6a5; /* verde chiaro per evidenziare sostenibilità */
 }
 
@@ -87,6 +87,8 @@ nav ul {
 }
 
 nav a {
+    display: block;
+    color: var(--bianco);
     font-weight: 500;
     transition: color 0.2s ease;
 }
