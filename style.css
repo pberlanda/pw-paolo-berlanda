@@ -2,7 +2,7 @@
     SETTING BASE
     azzero margini e padding
     imposto il box-sizong su border-box in modo che padding e bordi non alterino 
-    larghezze calcolate. Il layout così è più prevedibile
+    larghezze calcolate. Il layout così è più prevedibile (Tecnologie del Web)
 -----------------------------------------------------------------------------*/
 * {
     margin: 0;
@@ -32,9 +32,9 @@
     --ombra: rgba(0, 0, 0, 0.12);
 }
 
-/* --------------------------------
-    setting base per alta leggibilità
----------------------------------*/
+/* -----------------------------
+    setting per alta leggibilità
+-------------------------------*/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:var(--testo);
@@ -95,4 +95,51 @@ nav a {
 
 nav a:hover {
     color: #a9d6a5;
+}
+
+/* ---------------------------------------------------------------------------
+    SEZIONE HERO
+    banner di apertura con msg di mission aziendale (Strategia, Organizzazione
+    e Marketing)
+    background con gradiente di riempimento suggestione di campi coltivati
+----------------------------------------------------------------------------*/
+.hero {
+    background: linear-gradient(135deg, var(--verde-scuro),var(--verde));
+    color: var(--bianco);
+    text-align: center;
+    padding: 5rem 1.5rem;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+/* btn utilizzato in diversi punti della pagina */
+.btn {
+    display: inline-block;
+    background-color: var(--bianco);
+    color:var(--verde-scuro);
+    padding: 0.9rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 700;
+    box-shadow: 0 4px 10px var(--ombra);
+    transition: transform 0.2s ease, box-shadow 0.2 ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px var(--ombra);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--bianco);
+    color: var(--bianco);
 }
