@@ -1,8 +1,8 @@
 /* ----------------------------------------------------------------------------
- SETTING BASE
- azzero marginie padding
- imposto il box-sizong su border-box in modo che padding e bordi non alterino 
- larghezze calcolate. Il layout così + più prevedibile
+    SETTING BASE
+    azzero marginie padding
+    imposto il box-sizong su border-box in modo che padding e bordi non alterino 
+    larghezze calcolate. Il layout così + più prevedibile
 -----------------------------------------------------------------------------*/
 * {
     margin: 0;
@@ -11,15 +11,15 @@
 }
 
 /* ----------------------------------------------------------------------------
-   Custom properties
-   variabili CSS per definire una palette di coliri ispirata al mondo
-   dell'agricoltura:
-   - verde (campi, sostenibilità)
-   - terra (lavoro nei campi)
-   - crema (grando, patate, prodotti della terra)
-   usare variabili permette di cambiare tema modificando un solo punto nel
-   codice (programmazione distribuita e cloud computing, ingegneria del sw)
-   :root -> custom properties valide in tutto il documento
+    Custom properties
+    variabili CSS per definire una palette di coliri ispirata al mondo
+    dell'agricoltura:
+    - verde (campi, sostenibilità)
+    - terra (lavoro nei campi)
+    - crema (grando, patate, prodotti della terra)
+    usare variabili permette di cambiare tema modificando un solo punto nel
+    codice (programmazione distribuita e cloud computing, ingegneria del sw)
+    :root -> custom properties valide in tutto il documento
 -----------------------------------------------------------------------------*/
 :root {
     --verde-scuro: #1f4d2c;
@@ -33,7 +33,7 @@
 }
 
 /* --------------------------------
-  setting base per alta leggibilità
+    setting base per alta leggibilità
 ---------------------------------*/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -45,4 +45,27 @@ body {
 a {
     text-decoration: none;
     display: block;
+}
+
+/* ---------------------------------------------------------------------------
+    HEADER e NAVBAR
+    position sticky -> la navbar rimane visibile anche durante lo scroll della
+    pagina. Lettura migliotrata su display di altezza ridotta
+-----------------------------------------------------------------------------*/
+header {
+    background-color: var(--verde-scuro);
+    color: var(--bianco);
+    position: sticky;
+    top:0;
+    z-index: 100;
+    box-shadow: 0 2px 8px var(--ombra);
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
