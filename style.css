@@ -199,3 +199,12 @@ nav a:hover {
     font-size: 0.95rem;
     margin-top: 0.3rem;
 }
+
+/* FOOTER */
+footer {
+    background-color: var(--terra);
+    color: var(--bianco);
+    text-align: center;
+    padding: 1.8rem 1.5rem;
+    font-size: 0.9rem;
+}
