@@ -208,3 +208,18 @@ footer {
     padding: 1.8rem 1.5rem;
     font-size: 0.9rem;
 }
+
+/* RESPONSIVE -----------------------------------------------------
+    sotto i 700px il menu va a capo (facile con flex)
+    riduco la dimensione dei titoli per non compromettere il layout
+    su schermi più piccoli
+------------------------------------------------------------------*/
+@media (max-width:700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
