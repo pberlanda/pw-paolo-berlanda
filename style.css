@@ -11,7 +11,7 @@
 }
 
 /* ----------------------------------------------------------------------------
-    Custom properties
+    VARIABILI CSS Custom properties
     variabili CSS per definire una palette di colori ispirata al mondo
     dell'agricoltura:
     - verde (campi, sostenibilità)
@@ -47,8 +47,13 @@ a {
     display: block;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 /* ---------------------------------------------------------------------------
-    HEADER e NAVBAR
+    HEADER / NAVBAR
     position sticky -> la navbar rimane visibile anche durante lo scroll della
     pagina. Lettura migliorata su display di altezza ridotta
 -----------------------------------------------------------------------------*/
@@ -145,7 +150,9 @@ nav a:hover {
     color: var(--bianco);
 }
 
-/* CONTAINER */
+/* CONTAINER------------------------------------------------------------------------------------
+    classe utilizzata per ottimizzare e rendere ommogenei i contenuti nelle sezioni della pagina
+ ---------------------------------------------------------------------------------------------*/
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -166,9 +173,9 @@ nav a:hover {
     color: #555;
 }
 
-/* STATISTICHE AZIENDALI
-    griglia responsive usando grid. le colonne si adattano in base allo spazio disponibile senza usare media query
-*/
+/* STATISTICHE AZIENDALI -----------------------------------------------------------------
+    griglia responsive usando grid. le colonne si adattano in base allo spazio disponibile
+----------------------------------------------------------------------------------------*/
 
 .stats {
     background-color: var(--verde-chiaro);
@@ -181,13 +188,13 @@ nav a:hover {
     text-align: center;
 }
 
-.stats-numero {
+.stat-numero {
     font-size: 2.2rem;
     font-weight: 800;
     color: var(--verde-scuro);
 }
 
-.stats-label {
+.stat-label {
     color: 555;
     font-size: 0.95rem;
     margin-top: 0.3rem;
