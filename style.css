@@ -133,6 +133,7 @@ nav a:hover {
     transition: transform 0.2s ease, box-shadow 0.2 ease;
 }
 
+/* quando si posiziona il puntatore sopra il btn si sposta verso l'alto (effetto dinamico) */
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 14px var(--ombra);
