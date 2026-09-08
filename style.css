@@ -165,3 +165,30 @@ nav a:hover {
     margin: 0 auto 3rem auto;
     color: #555;
 }
+
+/* STATISTICHE AZIENDALI
+    griglia responsive usando grid. le colonne si adattano in base allo spazio disponibile senza usare media query
+*/
+
+.stats {
+    background-color: var(--verde-chiaro);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem; /* spazio tra elementi grid */
+    text-align: center;
+}
+
+.stats-numero {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--verde-scuro);
+}
+
+.stats-label {
+    color: 555;
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+}
