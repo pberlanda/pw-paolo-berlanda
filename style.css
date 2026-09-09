@@ -126,6 +126,11 @@ nav a:hover {
     font-size: 1.1rem;
     opacity: 0.95;
 }
+
+.hero .container {
+    padding: 0;
+}
+
 /* btn utilizzato in diversi punti della pagina */
 .btn {
     display: inline-block;
