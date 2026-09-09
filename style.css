@@ -237,6 +237,58 @@ nav a:hover {
     color: #444;
 }
 
+/* -----------------
+    SEZIONE DOWNLOAD
+----------------- */
+.download-section {
+    background-color: var(--verde-scuro);
+    color: var(--bianco);
+}
+
+.download-section .section-title,
+.download-section .section-subtitle {
+    color: (var(--bianco));
+}
+
+.download-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.download-item {
+    background-color: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.download-item .info span {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.download-btn {
+    background-color: #a9d6a5;
+    color: var(--verde-scuro);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.download-btn:hover {
+    background-color: var(--bianco);
+}
+
 /* FOOTER */
 footer {
     background-color: var(--terra);
