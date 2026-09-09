@@ -140,7 +140,7 @@ nav a:hover {
     border-radius: 30px;
     font-weight: 700;
     box-shadow: 0 4px 10px var(--ombra);
-    transition: transform 0.2s ease, box-shadow 0.2 ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* quando si posiziona il puntatore sopra il btn si sposta verso l'alto (effetto dinamico) */
@@ -202,7 +202,7 @@ nav a:hover {
 }
 
 .stat-label {
-    color: 555;
+    color: #555;
     font-size: 0.95rem;
     margin-top: 0.3rem;
 }
@@ -212,18 +212,18 @@ nav a:hover {
 ------------------- */
 
 .cards-grid {
-    color: #555;
-    font-size: 0.95rem;
-    margin-top: 0.3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
 .card {
-    background-color: car(--bianco);
+    background-color: var(--bianco);
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 3px 10px var(--ombra);
     border-top: 5px solid var(--verde);
-    transform: transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .card:hover {
@@ -236,10 +236,14 @@ nav a:hover {
     font-size: 1.3rem;
 }
 
-.card li{
+.card ul{
     margin-top: 0.8rem;
     padding-left: 1.2rem;
     color: #444;
+}
+
+.card li {
+    margin-bottom: 0.4rem;
 }
 
 /* -----------------
@@ -252,7 +256,7 @@ nav a:hover {
 
 .download-section .section-title,
 .download-section .section-subtitle {
-    color: (var(--bianco));
+    color: var(--bianco);
 }
 
 .download-list {
