@@ -150,7 +150,8 @@ nav a:hover {
     color: var(--bianco);
 }
 
-/* CONTAINER------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------------
+    CONTAINER
     classe utilizzata per ottimizzare e rendere ommogenei i contenuti nelle sezioni della pagina
  ---------------------------------------------------------------------------------------------*/
 .container {
@@ -173,7 +174,8 @@ nav a:hover {
     color: #555;
 }
 
-/* STATISTICHE AZIENDALI -----------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------
+    STATISTICHE AZIENDALI
     griglia responsive usando grid. le colonne si adattano in base allo spazio disponibile
 ----------------------------------------------------------------------------------------*/
 
@@ -198,6 +200,25 @@ nav a:hover {
     color: 555;
     font-size: 0.95rem;
     margin-top: 0.3rem;
+}
+
+/* -------------------
+    CARD SOSTENIBILITà
+------------------- */
+
+.cards-grid {
+    color: #555;
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+}
+
+.card {
+    background-color: car(--bianco);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 3px 10px var(--ombra);
+    border-top: 5px solid var(--verde);
+    transform: transform 0.2s ease;
 }
 
 /* FOOTER */
